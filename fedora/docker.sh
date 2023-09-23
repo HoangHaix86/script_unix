@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #Uninstall old versions
-dnf remove docker \
+sudo dnf remove docker \
                   docker-client \
                   docker-client-latest \
                   docker-common \
@@ -13,11 +13,11 @@ dnf remove docker \
                   docker-engine
 
 #Install using the rpm repository
-dnf -y install dnf-plugins-core
-dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
+sudo dnf install -y dnf-plugins-core
+sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
 
 #Install Docker Engine
-dnf install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 #Start docker
 systemctl start docker

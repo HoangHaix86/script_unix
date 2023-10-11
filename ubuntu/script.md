@@ -61,6 +61,25 @@
 
     ```
 
+5. ZSH
+
+    ```bash
+    sudo apt install zsh
+    
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+    https://github.com/marlonrichert/zsh-snap
+    ```
+
+    ```zsh
+    [[ -r ~/Repos/znap/znap.zsh ]] ||
+    git clone --depth 1 -- https://github.com/marlonrichert/zsh-snap.git ~/Repos/znap
+    source ~/Repos/znap/znap.zsh  # Start Znap
+
+    znap source marlonrichert/zsh-autocomplete
+    znap source zsh-users/zsh-syntax-highlighting
+    ```
+
 ```bash
 ssh-keygen -t ed25519 -C "hai.hoang.2762@gmail.com" -f ~/.ssh/github_HoangHaix86
 eval "$(ssh-agent -s)"

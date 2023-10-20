@@ -52,3 +52,9 @@ sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/dock
 sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 sudo usermod -aG docker $USER
 newgrp docker
+
+
+# Vagrant
+sudo dnf install -y dnf-plugins-core
+sudo dnf config-manager --add-repo https://rpm.releases.hashicorp.com/fedora/hashicorp.repo
+sudo dnf -y install vagrant

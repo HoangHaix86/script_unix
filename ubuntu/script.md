@@ -28,10 +28,11 @@
 
     ```shell
     sudo apt install -y libfuse2
-    wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-2.0.4.17212.tar.gz
-    tar -xzf jetbrains-toolbox-2.0.4.17212.tar.gz 
-    rm jetbrains-toolbox-2.0.4.17212.tar.gz
-    mv jetbrains-toolbox-2.0.4.17212 jetbrains-toolbox
+    JETBRAIN_FILENAME=jetbrains-toolbox-2.1.3.18901
+    wget https://download.jetbrains.com/toolbox/$JETBRAIN_FILENAME.tar.gz
+    tar -xzf $JETBRAIN_FILENAME.tar.gz 
+    rm $JETBRAIN_FILENAME.tar.gz
+    mv $JETBRAIN_FILENAME jetbrains-toolbox
     sudo mv jetbrains-toolbox /opt
     /opt/jetbrains-toolbox/jetbrains-toolbox
     ```

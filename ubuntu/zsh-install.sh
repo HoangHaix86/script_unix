@@ -6,6 +6,9 @@ sudo apt-get update
 
 sudo apt-get install -y git wget zsh
 
+zsh
+
+
 curl -sSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | bash -s -- --skip-chsh
 
 # plugins

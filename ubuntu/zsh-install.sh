@@ -13,7 +13,6 @@ curl -sSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install
 # plugins
 
 sudo tee -a ~/.zshrc <<EOF
-alias code="code-insiders"
 alias dc="docker compose"
 alias dps="docker ps"
 alias ds="docker stop"

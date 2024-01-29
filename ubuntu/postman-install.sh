@@ -8,6 +8,8 @@ wget https://dl.pstmn.io/download/latest/linux_64
 
 tar zxf linux_64
 
+sudo rm -rf /opt/Postman
+
 sudo mv Postman /opt
 
 cat <<EOF > /opt/Postman/app/resources/Postman.desktop

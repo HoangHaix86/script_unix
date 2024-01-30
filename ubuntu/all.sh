@@ -63,5 +63,5 @@ install -t ~/.local/share/applications/ /opt/Postman/app/resources/Postman.deskt
 rm linux_64
 
 # ======== Jetbrains Toolbox ========
-wget $(python3 ./script-install-jetbraintoolbox.py)"
+wget "$(python3 ./script-install-jetbraintoolbox.py)"
 sudo tar -xzf jetbrains-toolbox*.tar.gz -C /opt

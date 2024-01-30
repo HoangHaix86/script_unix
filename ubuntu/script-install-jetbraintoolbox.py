@@ -12,4 +12,6 @@ data_json = result.stdout
 data_json = json.loads(data_json)
 
 link_download = data_json[0]["releases"][0]["downloads"]["linux"]["link"]
-print(link_download)
+
+command = ['wget', link_download, '-O', 'jetbrains-toolbox.tar.gz']
+subprocess.run(command)

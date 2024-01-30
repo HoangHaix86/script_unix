@@ -61,3 +61,6 @@ EOF
 install -t ~/.local/share/applications/ /opt/Postman/app/resources/Postman.desktop
 
 rm linux_64
+
+# ======== Jetbrains Toolbox ========
+https://download-cdn.jetbrains.com/toolbox/jetbrains-toolbox-2.1.3.18901.tar.gz

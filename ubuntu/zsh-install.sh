@@ -19,6 +19,9 @@ source ~/Repos/znap/znap.zsh
 
 znap source marlonrichert/zsh-autocomplete
 znap source zsh-users/zsh-syntax-highlighting
+
+source <(kubectl completion zsh)
+source <(kubeadm completion zsh)
 EOF
 
 source ~/.zshrc

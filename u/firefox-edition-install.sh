@@ -12,7 +12,8 @@ rm -r Firefox-dev.tar.bz2
 
 sudo ln -s /opt/firefox/firefox /usr/local/bin/firefox-dev
 
-cat >> /usr/share/applications/Firefox-dev.desktop <<EOF
+sudo rm /usr/share/applications/Firefox-dev.desktop
+sudo tee /usr/share/applications/Firefox-dev.desktop <<EOF
 [Desktop Entry]
 Name=Firefox-developer-edition
 Exec=/usr/local/bin/firefox-dev
